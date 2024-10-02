@@ -1,3 +1,20 @@
-main{
-    
+body{
+    width: 50%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+header{
+    font-weight: bolder;
+    text-align: center;
+}
+
+header > h1{
+    font-size: x-large;
+}
+
+fieldset{
+    box-shadow: 0 0 10px black;
+}
+
+
