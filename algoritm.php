@@ -5,7 +5,7 @@
     $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
     $cuadrado = $conclusions[1];
 
-    if ($conclusions[0]) {
+    if ($conclusions[0] == true) {
         // Redirige a par.php con el número y su cuadrado
         header("Location: par.php?numero=$number&cuadrado=$cuadrado");
     } else {
