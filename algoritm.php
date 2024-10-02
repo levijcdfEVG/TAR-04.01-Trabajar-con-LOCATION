@@ -5,7 +5,7 @@
     $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
     $cuadrado = $conclusions[1];
 
-    if ($conclusions[0] == true) {
+    if ($conclusions[0]) {
         // Redirige a par.php con el número y su cuadrado
         header("Location: even.php?numero=$number&cuadrado=$cuadrado");
     } else {
