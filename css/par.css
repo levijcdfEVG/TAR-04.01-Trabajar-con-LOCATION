@@ -1,0 +1,38 @@
+body{
+    width: 50%; /* Ancho del cuerpo */
+    margin: auto; /* Margen automático para centrar */
+    text-align: center; /* Alineación del texto al centro */
+    background-image: url("../img/par.jpeg"); /* Imagen de fondo */
+    background-size: cover; /* Tamaño de fondo cubre todo el área */
+    font-size: x-large; /* Tamaño de fuente grande */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Familia de fuentes */
+}
+
+main{
+    width: 50%; /* Ancho del elemento principal */
+    margin: auto; /* Margen automático para centrar */
+    position: fixed; /* Posición fija */
+    top: 50%; /* A 50% desde la parte superior */
+    left: 50%; /* A 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Trasladar para centrar */
+    background-color: whitesmoke; /* Color de fondo blanco humo */
+    border: 1px solid black; /* Borde sólido negro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 50px; /* Sombra de caja */
+}
+
+main > table{
+    text-align: center; /* Alineación del texto al centro */
+    width: 50%; /* Ancho de la tabla */
+    margin: auto; /* Margen automático para centrar */
+    border: 1px solid black; /* Borde sólido negro */
+    border-collapse: collapse; /* Colapsar bordes */
+    box-shadow: 0 0 5px; /* Sombra de caja */
+    background-color: white; /* Color de fondo blanco */
+    margin-bottom: 10%; /* Margen inferior del 10% */
+}
+
+td{
+    border: 1px solid black; /* Borde sólido negro */
+}
+
