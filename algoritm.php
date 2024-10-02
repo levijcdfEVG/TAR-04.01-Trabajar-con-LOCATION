@@ -7,10 +7,10 @@
 
     if ($conclusions[0] == true) {
         // Redirige a par.php con el número y su cuadrado
-        header("Location: par.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: even.php?numero=$number&cuadrado=$cuadrado");
     } else {
         // Redirige a impar.php con el número y su cuadrado
-        header("Location: impar.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: odd.php?numero=$number&cuadrado=$cuadrado");
     }
 
     
