@@ -3,6 +3,11 @@
     $number = $_GET['selectedNumber']; //Se pasa el numero que ha venido del formulario a una variable propria
    
     $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
+    if(!isset($conclusions)){
+        header("Location: nada.html");
+    }
+    //Si no se ha creado array, se manda a la pagina nada
+
     $cuadrado = $conclusions[1];
 
     if ($conclusions[0]) {
