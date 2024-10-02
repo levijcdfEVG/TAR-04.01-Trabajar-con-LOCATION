@@ -1,6 +1,7 @@
 body{
     width: 50%; /* Establece el ancho del cuerpo al 50% del contenedor padre */
     margin: auto; /* Centra el cuerpo horizontalmente */
+    font-size: x-large; /* Tamaño de fuente grande */
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la familia de fuentes para el texto */
     background-image: url("../img/background.jpeg"); /* Establece una imagen de fondo */
 }
@@ -10,7 +11,11 @@ main{
     top: 50%; /* Posiciona el elemento al 50% desde la parte superior de la ventana */
     left: 50%; /* Posiciona el elemento al 50% desde la parte izquierda de la ventana */
     transform: translate(-50%, -50%); /* Centra el elemento en la ventana */
-
+    background-color: white;
+    padding: 10%;
+    box-shadow: 0 0 30px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 header{
@@ -31,14 +36,14 @@ fieldset{
 
 fieldset > input {
     display: block; /* Hace que el input sea un elemento de bloque */
-    width: 100%; /* Establece el ancho del input al 100% del contenedor padre */
-    margin: 10px 0; /* Aplica un margen de 10px arriba y abajo */
+    width: 50%; /* Establece el ancho del input al 100% del contenedor padre */
+    margin: auto; /* Aplica un margen de 10px arriba y abajo */
     box-shadow: 0 0 10px; /* Aplica una sombra con una difuminasión de 10px */
 
 }
 
 fieldset > input[type="submit"] {
-    width: 50%; /* Establece el ancho del botón submit al 50% del contenedor padre */
+    width: 25%; /* Establece el ancho del botón submit al 50% del contenedor padre */
     margin: 10px auto; /* Aplica un margen de 10px arriba y abajo y centra el botón horizontalmente */
 }
 
