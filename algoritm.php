@@ -1,6 +1,13 @@
 <?php  
 
-    $number = $_GET['selectedNumber']; //Se pasa el numero que ha venido del formulario a una variable propria
+    // Verifica si el parámetro 'selectedNumber' está presente y es un número válido
+    if (!isset($_GET['selectedNumber'])) {
+        // Redirige a una página de error si el número no es válido
+        header("Location: error.php?mensaje=Numero no valido");
+        
+    }
+
+    $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
    
     $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
 
@@ -14,23 +21,16 @@
         header("Location: odd.php?numero=$number&cuadrado=$cuadrado");
     }
 
-    
-
-
-
-
-
     // Funciones
     function analisisNumero($number){
         
         $conclusions = array();
         
-        //Bloque que evalua si el numero es par o impar
+        // Bloque que evalua si el numero es par o impar
         if(($number % 2) != 0){
-            $esPar = false; //Si es no es divisible por 2, no es par
-            
+            $esPar = false; // Si es no es divisible por 2, no es par
         }else{
-            $esPar = true; //Si es es divisible por 2, es par
+            $esPar = true; // Si es es divisible por 2, es par
         }
 
         $conclusions[0] = $esPar;  // Guarda si es par o no
