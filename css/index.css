@@ -1,41 +1,45 @@
 body{
-    width: 50%;
-    margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../img/background.jpeg");
+    width: 50%; /* Establece el ancho del cuerpo al 50% del contenedor padre */
+    margin: auto; /* Centra el cuerpo horizontalmente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la familia de fuentes para el texto */
+    background-image: url("../img/background.jpeg"); /* Establece una imagen de fondo */
 }
 
 main{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed; /* Fija la posición del elemento en la ventana del navegador */
+    top: 50%; /* Posiciona el elemento al 50% desde la parte superior de la ventana */
+    left: 50%; /* Posiciona el elemento al 50% desde la parte izquierda de la ventana */
+    transform: translate(-50%, -50%); /* Centra el elemento en la ventana */
+
 }
 
 header{
-    font-weight: bolder;
-    text-align: center;
+    font-weight: bolder; /* Hace que el texto sea más grueso */
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 header > h1{
-    font-size: x-large;
+    font-size: x-large; /* Establece el tamaño de la fuente a extra grande */
 }
 
+
+
 fieldset{
-    box-shadow: 0 0 10px black;
-    background-color: white;
-    text-align: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    border: none;
 }
 
 fieldset > input {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+    display: block; /* Hace que el input sea un elemento de bloque */
+    width: 100%; /* Establece el ancho del input al 100% del contenedor padre */
+    margin: 10px 0; /* Aplica un margen de 10px arriba y abajo */
+    box-shadow: 0 0 10px; /* Aplica una sombra con una difuminasión de 10px */
+
 }
 
 fieldset > input[type="submit"] {
-    width: 50%;
-    margin: 10px auto;
+    width: 50%; /* Establece el ancho del botón submit al 50% del contenedor padre */
+    margin: 10px auto; /* Aplica un margen de 10px arriba y abajo y centra el botón horizontalmente */
 }
 
 
