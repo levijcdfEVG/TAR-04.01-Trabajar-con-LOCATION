@@ -4,15 +4,12 @@
     if (!isset($_GET['selectedNumber'])) {
         // Redirige a una página de error si el número no es válido
         header("Location: error.php?mensaje=Numero no valido");
-        //He visto aqui https://www.php.net/manual/en/function.exit.php que hay poner la funcion exit() para que funcione correctamente
-        exit();
+        exit(); //He visto aqui https://www.php.net/manual/en/function.exit.php que hay poner la funcion exit() para que funcione correctamente
     }
 
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
-   
     $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
-
-    $cuadrado = $conclusions[1];
+    $cuadrado = $conclusions[1]; //Se guarda el cuadrado en una variable separada
 
     if ($conclusions[0]) {
         // Redirige a par.php con el número y su cuadrado
@@ -23,6 +20,11 @@
         header("Location: odd.php?numero=$number&cuadrado=$cuadrado");
         exit();
     }
+
+
+
+
+
 
     // Funciones
     function analisisNumero($number){
