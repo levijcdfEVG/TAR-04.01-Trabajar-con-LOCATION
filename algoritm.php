@@ -8,10 +8,10 @@
     }
 
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
-    analisisNumero(&$number); // Le pasamos la variable con el número como parámetro
+     
     
 
-    if ($conclusions[0]) {
+    if (esPar(&$number)) { // Le pasamos la variable con el número como parámetro y el numero en referencia
         // Redirige a par.php con el número y su cuadrado
         header("Location: even.php?numero=$number");
         exit();
