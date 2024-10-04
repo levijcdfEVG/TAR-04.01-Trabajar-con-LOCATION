@@ -8,7 +8,6 @@
     }
 
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
-     
     
 
     if (esPar(&$number)) { // Le pasamos la variable con el número como parámetro y el numero en referencia
@@ -21,21 +20,17 @@
         exit();
     }
 
-
-
-
     // Funciones
     //Analisa el numero y verifica si es par y devuelve true o false
     function esPar($number){
         // Bloque que evalua si el numero es par o impar
 
-        $number * $number; // Se calcula el cuadrado, lo cual no va a afectar el resultado debido que el cuadrado de un numero es del mismo tipo que el original
+        $number *= $number; // Se calcula el cuadrado, lo cual no va a afectar el resultado debido que el cuadrado de un numero es del mismo tipo que el original
         if(($number % 2) != 0){
             return false; // Si es no es divisible por 2, no es par
         }else{
            return true; // Si es es divisible por 2, es par
         }
-
 
     }
 
