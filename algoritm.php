@@ -8,41 +8,35 @@
     }
 
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
-    $conclusions = analisisNumero($number); // Le pasamos la variable con el número como parámetro
-    $cuadrado = $conclusions[1]; //Se guarda el cuadrado en una variable separada
+    analisisNumero(&$number); // Le pasamos la variable con el número como parámetro
+    
 
     if ($conclusions[0]) {
         // Redirige a par.php con el número y su cuadrado
-        header("Location: even.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: even.php?numero=$number");
         exit();
     } else {
         // Redirige a impar.php con el número y su cuadrado
-        header("Location: odd.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: odd.php?numero=$number");
         exit();
     }
 
 
 
 
-
-
     // Funciones
-    //Analisa el numero y verifica si es par y calcula su cuadrado
-    function analisisNumero($number){
-        
-        $conclusions = array();
-        
+    //Analisa el numero y verifica si es par y devuelve true o false
+    function esPar($number){
         // Bloque que evalua si el numero es par o impar
+
+        $number * $number; // Se calcula el cuadrado, lo cual no va a afectar el resultado debido que el cuadrado de un numero es del mismo tipo que el original
         if(($number % 2) != 0){
-            $esPar = false; // Si es no es divisible por 2, no es par
+            return false; // Si es no es divisible por 2, no es par
         }else{
-            $esPar = true; // Si es es divisible por 2, es par
+           return true; // Si es es divisible por 2, es par
         }
 
-        $conclusions[0] = $esPar;  // Guarda si es par o no
-        $conclusions[1] = $number * $number; // Guarda el cuadrado del número
 
-        return  $conclusions;
     }
 
 ?>
