@@ -25,8 +25,6 @@
     // Funciones
     //Analisa el numero y verifica si es par y devuelve true o false
     function esPar($number){
-    
-        
         // Bloque que evalua si el numero es par o impar
         if(($number % 2) != 0){
             return false; // Si es no es divisible por 2, no es par
