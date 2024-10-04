@@ -8,15 +8,14 @@
     }
 
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
-    esPar($number); // Le pasamos la variable con el número como parámetro
-
+    
     if (esPar($number)) {
         // Redirige a par.php con el número y su cuadrado
-        header("Location: even.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: even.php?numero=$number");
         exit();
     } else {
         // Redirige a impar.php con el número y su cuadrado
-        header("Location: odd.php?numero=$number&cuadrado=$cuadrado");
+        header("Location: odd.php?numero=$number");
         exit();
     }
 
