@@ -27,6 +27,7 @@
 
 
     // Funciones
+    //Analisa el numero y verifica si es par y calcula su cuadrado
     function analisisNumero($number){
         
         $conclusions = array();
