@@ -13,10 +13,8 @@
                     <?php
                         //Se guarda los elementos del array asociativo get en variables individuales
                         $numero = $_GET['numero'];
-                        $cuadrado = $_GET['cuadrado'];
 
-                        echo "<td>".$numero."</td>";
-                        echo "<td>".$cuadrado."</td>";                       
+                        echo "<td>".$numero."</td>";                    
                     ?>
                     <td>Par</td>
                 </tr>
