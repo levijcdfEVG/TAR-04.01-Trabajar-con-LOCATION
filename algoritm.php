@@ -10,7 +10,7 @@
     $number = $_GET['selectedNumber']; // Se pasa el numero que ha venido del formulario a una variable propria
     
 
-    if (esPar(&$number)) { // Le pasamos la variable con el número como parámetro y el numero en referencia
+    if (esPar($number)) { // Le pasamos la variable con el número como parámetro y el numero en referencia
         // Redirige a par.php con el número y su cuadrado
         header("Location: even.php?numero=$number");
         exit();
@@ -22,7 +22,7 @@
 
     // Funciones
     //Analisa el numero y verifica si es par y devuelve true o false
-    function esPar($number){
+    function esPar(&$number){
         // Bloque que evalua si el numero es par o impar
 
         $number *= $number; // Se calcula el cuadrado, lo cual no va a afectar el resultado debido que el cuadrado de un numero es del mismo tipo que el original
