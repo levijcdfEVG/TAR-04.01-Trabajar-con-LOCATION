@@ -14,7 +14,8 @@
                         //Se guarda los elementos del array asociativo get en variables individuales
                         $numero = $_GET['numero'];
 
-                        echo "<td>".$numero."</td>";                    
+                        echo "<td>".$numero."</td>";
+                        echo "<td>".sqrt($numero)."</td>";                         
                     ?>
                     <td>Par</td>
                 </tr>
